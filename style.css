@@ -18,7 +18,7 @@ body {
     padding: 80px 0 0;
     background-image:
     
-        url("/PICTURES/bg for css.avif?auto=format&fit=crop&w=1800&q=85");
+        url("PICTURES/bg for css.avif");
         padding: 0;
         
         background-size: cover;
@@ -109,7 +109,7 @@ button {
             rgba(250, 249, 249, 0.78),
             rgba(51, 57, 92, 0.78)
         ),
-        url("/PICTURES/real-united-logo.jpg?auto=format&fit=crop&w=1800&q=85");
+        url("PICTURES/real-united-logo.jpg");
 
     background-size: cover;
     background-position: center;
@@ -216,7 +216,7 @@ button {
             rgba(248, 248, 248, 0.78),
             rgba(82, 87, 107, 0.78)
         ),
-        url("/PICTURES/gold.jpg?auto=format&fit=crop&w=1800&q=85");
+        url("PICTURES/gold.jpg");
 
     border-radius: 20px;
 
