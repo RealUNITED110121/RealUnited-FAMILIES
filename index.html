@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>REAL UNITED GALLERY</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+        <div
+                id="searchInput"
+                >
+        </div>
+
+        <!-- Image Grid -->
+        <div class="image-grid" id="imageGrid">
+
+            <!-- Card 1 -->
+            <article class="card"
+                data-title="INMATE AVATAR OFFICIAL"
+                data-category="OFFICIAL DRESS CODE"
+                data-description="LLIE, BRIE, AZARIELLA, ANINO, SMOOTH, DEBZ, YHANZ, DINO, SHANN, CARL, YULL, MAE, YANNA, HARO, MIMI, GIYOO, ART, WRAE, ANGELO, ROZE"
+                data-image="D:/CODING/real-united-website/PICTURES/IM AVATAR.jpg">
+
+                <div class="card-image">
+                    <img
+                        src="D:\CODING\real-united-website\PICTURES\INMATE logo.jpg"
+                        alt="RealUnited"
+                        loading="lazy"
+                    >
+                    <span class="badge">IM</span>
+                </div>
+
+                <div class="card-content"><center>
+                    <h3>INMATE</h3>
+                    <p>20 MEMBERS</p>
+                    <button class="details-btn">View Details →</button>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card"
+                data-title="SOUL SPIRIT AVATAR OFFICIAL"
+                data-category="OFFICIAL DRESS CODE"
+                data-description="FINNA, SHING, JAYEM"
+                data-image="d:/CODING/real-united-website/PICTURES/SSF avatar.jpg">
+
+                <div class="card-image">
+                    <img
+                        src="D:/CODING/real-united-website/PICTURES/SSF logo.jpg"
+                        alt="RealUnited"
+                        loading="lazy"
+                    >
+                    <span class="badge">SS</span>
+                </div>
+
+                <div class="card-content"><center>
+                    <h3>SOUL SPIRIT</h3>
+                    <p>3 MEMBERS</p>
+                    <button class="details-btn">View Details →</button>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card"
+                data-title="GUARDIANS AVATAR OFFICIAL"
+                data-category="OFFICIAL DRESS CODE"
+                data-description="BRIE, BRIGHT, JRIE, YUMMY, KENT, ZENIN"
+                data-image="D:/CODING/real-united-website/PICTURES/GD logo.jpg">
+
+                <div class="card-image">
+                    <img
+                        src="D:/CODING/real-united-website/PICTURES/GD logo.jpg"
+                        alt="RealUnited"
+                        loading="lazy"
+                    >
+                    <span class="badge">GD</span>
+                </div>
+
+                <div class="card-content"><center>
+                    <h3>GUARDIANS</h3>
+                    <p>6 MEMBERS</p>
+                    <button class="details-btn">View Details →</button>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="card"
+                data-title="THE DIVERGIANT SOUL AVATAR OFFICIAL"
+                data-category="OFFICIAL DRESS CODE"
+                data-description="ERICA, RENCE, JASPER, DES, FUDGE, SANDRA, ANN, DORAEMON"
+                data-image="D:/CODING/real-united-website/PICTURES/TDS logo.jpg">
+
+                <div class="card-image">
+                    <img
+                        src="D:/CODING/real-united-website/PICTURES/TDS logo.jpg"
+                        alt="RealUnited"
+                        loading="lazy"
+                    >
+                    <span class="badge">TDS</span>
+                </div>
+
+                <div class="card-content"><center>
+                    <h3>THE DIVERGIANT SOUL</h3>
+                    <p>8 MEMBERS</p>
+                    <button class="details-btn">View Details →</button>
+                </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="card" 
+                data-title="TRUE ONE FAMILY AVATAR OFFICIAL"
+                data-category="OFFICIAL DRESS CODE"
+                data-description="GHIN, KING, KWATRO, BURGER, KUSH"
+                data-image="D:/CODING/real-united-website/PICTURES/TO logo.jpg">
+
+                <div class="card-image">
+                    <img
+                        src="D:/CODING/real-united-website/PICTURES/TO logo.jpg"
+                        alt="RealUnited"
+                        loading="lazy"
+                    >
+                    <span class="badge">TOF</span>
+                </div>
+
+                <div class="card-content"><center>
+                    <h3>TRUE ONE FAMILY</h3>
+                    <p>5 MEMBERS</p>
+                    <button class="details-btn">View Details →</button>
+                </div>
+            </article>
+
+
+        </div>
+
+        <!-- Search Result Message -->
+        <p id="noResults" class="no-results" hidden>
+            No images found. Try another search.
+        </p>
+
+    </main>
+    <!-- Details Popup -->
+    <div
+        class="modal"
+        id="detailsModal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+        aria-hidden="true"
+        hidden
+    >
+        <div class="modal-content">
+
+            <button
+                class="close-btn"
+                id="closeModal"
+                aria-label="Close details"
+            >&times;</button>
+
+            <img id="modalImage" src="" alt="">
+
+            <div class="modal-text">
+                <span id="modalCategory" class="badge"></span>
+
+                <h2 id="modalTitle"></h2>
+
+                <p id="modalDescription"></p>
+
+                <button class="hero-button" id="modalDone">
+                    Back to Gallery
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

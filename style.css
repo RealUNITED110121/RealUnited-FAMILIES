@@ -1,0 +1,536 @@
+/* =========================
+   GENERAL SETTINGS
+========================= */
+
+* {
+    margin: 0px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 80px 0 0;
+    background-image:
+    
+        url("D:/CODING/real-united-website/PICTURES/bg for css.avif?auto=format&fit=crop&w=1800&q=85");
+        padding: 0;
+        
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    width: 100%;
+    min-height: 75px;
+    padding: 18px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #ffffff;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #fae100;
+}
+
+.header nav {
+    display: flex;
+    gap: 28px;
+}
+
+.header nav a {
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.header nav a:hover {
+    color: #6c63ff;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 550px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(250, 249, 249, 0.78),
+            rgba(51, 57, 92, 0.78)
+        ),
+        url("D:/CODING/real-united-website/PICTURES/real-united-logo.jpg?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+    color: #080303;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.subtitle {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 6vw, 62px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #EFBF04;
+}
+
+.hero-description {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: goldenrod;
+    font-size: 16px;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 13px 25px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #6c63ff;
+    color: #000000;
+
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: #5148e5;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   GALLERY SECTION
+========================= */
+
+.gallery-section {
+    padding: 80px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-heading h2,
+.about-section h2 {
+    font-size: clamp(26px, 4vw, 38px);
+    margin-bottom: 10px;
+    color: #f2f2f5;
+}
+
+.section-heading > p:last-child {
+    color: rgb(252, 252, 252);
+}
+/* =========================
+   SIX IMAGE GRID
+========================= */
+
+.image-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, minmax(50px, 1fr));
+
+    gap: 25px;
+}
+
+/* =========================
+   IMAGE CARDS
+========================= */
+
+.card {
+    overflow: hidden;
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    background-image: 
+        linear-gradient(
+            rgba(248, 248, 248, 0.78),
+            rgba(82, 87, 107, 0.78)
+        ),
+        url("D:/CODING/real-united-website/PICTURES/gold.jpg?auto=format&fit=crop&w=1800&q=85");
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 25px rgb(252, 252, 255);
+
+    transition:
+        transform 0.35s,
+        box-shadow 0.35s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(225, 227, 235, 0.13);
+}
+
+.card-image {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s;
+}
+
+.card:hover .card-image img {
+    transform: scale(1.08);
+}
+
+/* Image category label */
+
+.badge {
+    display: inline-block;
+
+    padding: 6px 13px;
+
+    border-radius: 30px;
+
+    background: goldenrod;
+    color: #000000;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.card-image .badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+/* Card information */
+
+.card-content {
+    padding: 28px;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    color: goldenrod;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.details-btn {
+    padding: 80 0;
+
+    border: none;
+    background: transparent;
+
+    color: #0b1ecc;
+    font-weight: 800;
+    font-size: 14px;
+
+    transition: color 0.3s;
+}
+
+.details-btn:hover {
+    color: #efeff5;
+}
+
+/* Search results */
+
+.no-results {
+    text-align: center;
+    padding: 35px 10px;
+    color: #000000;
+}
+
+/* =========================
+   DETAILS POPUP
+========================= */
+
+.modal {
+    position: fixed;
+    inset: 0;
+
+    z-index: 200;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.78);
+
+    overflow-y: auto;
+}
+
+.modal[hidden] {
+    display: none;
+}
+
+.modal-content {
+    position: relative;
+
+    width: 100%;
+    max-width: 650px;
+
+    margin: auto;
+
+    background: rgb(228, 217, 217);
+    border-radius: 16px;
+    overflow: hidden;
+
+    animation: popup 0.25s ease;
+}
+
+@keyframes popup {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.modal-content > img {
+    display: block;
+
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+    background: #c0bdbd;
+}
+
+.modal-text {
+    padding: 30px;
+}
+
+.modal-text h2 {
+    margin: 15px 0;
+    font-size: 28px;
+}
+
+.modal-text p {
+    margin-bottom: 25px;
+    color: #000000;
+}
+
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    z-index: 2;
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #ffffff;
+    color: #2841d4;
+
+    font-size: 28px;
+    line-height: 1;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.close-btn:hover {
+    background: #010102;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    padding: 25px 8%;
+
+    background: #ebedf5;
+    color: #050a2c;
+
+    text-align: center;
+    font-size: 13px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablets */
+
+@media (max-width: 900px) {
+    .image-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .gallery-section {
+        padding: 80px 5%;
+    }
+
+    .card-image {
+        height: 210px;
+    }
+}
+
+/* Mobile phones */
+
+@media (max-width: 560px) {
+    .header {
+        padding: 15px 5%;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .header nav {
+        gap: 15px;
+    }
+
+    .header nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 380px;
+        padding: 60px 6%;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .gallery-section {
+        padding: 50px 5%;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .card-image {
+        height: 240px;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .about-section {
+        padding: 55px 6%;
+    }
+
+    .modal-content > img {
+        height: 220px;
+    }
+
+    .modal-text {
+        padding: 22px;
+    }
+
+    .modal-text h2 {
+        font-size: 23px;
+    }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
